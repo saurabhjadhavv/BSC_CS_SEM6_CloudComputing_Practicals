@@ -1,3 +1,5 @@
+#create a simple rest services
+
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
