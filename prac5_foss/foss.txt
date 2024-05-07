@@ -1,0 +1,2 @@
+Q5. Implement FOSS-Cloud Functionality VSI (Virtual Server Infrastructure) Infrastructure as a Service (IaaS), Storage.
+Refer steps that you return in your journals.

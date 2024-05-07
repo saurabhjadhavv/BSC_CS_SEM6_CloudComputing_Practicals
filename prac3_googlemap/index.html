@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Google Maps API Example</title>
+      <style>
+          #map {
+              height: 400px;
+              width: 100%;
+          }
+      </style>
+  </head>
+  <body>
+      <h1>Google Maps API Example</h1>
+      <div id="map"></div>
+      <script>
+          // Initialize and add the map
+          function initMap() {
+              // Specify latitude and longitude for the center of the map
+              const center = { lat: 19.218330, lng: 72.978088 }; // San Francisco coordinates
+              // Create a new map instance
+              const map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 12,
+                  center: center
+              });
+              // Add a marker at the center of the map
+              const marker = new google.maps.Marker({
+                  position: center,
+                  map: map,
+                  title: 'San Francisco'
+              });
+          }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBWCgEdqqLlvsSYxC8rnICxwIGUlJCHKs&callback=initMap" async defer></script>
+  </body>
+  </html>
